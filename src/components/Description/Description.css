@@ -2,5 +2,9 @@
     margin: 1rem 3rem;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    border-radius: 7px;
+}
+
+h2 {
+    margin-bottom: 10px;
 }

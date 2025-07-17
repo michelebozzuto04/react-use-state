@@ -20,8 +20,8 @@ const languages = [
         description: "Express è un framework web leggero e flessibile per Node.js che offre funzionalità robuste per costruire server web e API."
     },
     {
-        title: "React.js",
-        description: "React.js è una libreria JavaScript sviluppata da Facebook per costruire interfacce utente, in particolare applicazioni a pagina singola con componenti riutilizzabili."
+        title: "ReactJS",
+        description: "ReactJS è una libreria JavaScript sviluppata da Facebook per costruire interfacce utente, in particolare applicazioni a pagina singola con componenti riutilizzabili."
     }
 ];
 

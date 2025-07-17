@@ -8,7 +8,11 @@ export default function Description({ language }) {
                     <h2>{language.title}</h2>
                     <p>{language.description}</p>
                 </>
-                : <h2>nessun linguaggio selezionato</h2>
+                :
+                <>
+                    <h2>Nessun linguaggio selezionato</h2>
+                    <p>Seleziona un linguaggio per vedere i dettagli.</p>
+                </>
             }
         </div>
     )
