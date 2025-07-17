@@ -1,0 +1,17 @@
+.tabItemContainer {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0D6EFD;
+}
+
+.tabItemContainerActive {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #FFC107;
+}
+
+.tabTitle {
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
