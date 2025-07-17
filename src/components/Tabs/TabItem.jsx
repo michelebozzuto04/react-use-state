@@ -1,9 +1,9 @@
 import './TabItem.css'
 
-export default function TabItem({ title }) {
+export default function TabItem({ title, onClick, selected }) {
     return (
-        <div className='tabItemContainer'>
+        <button onClick={onClick} className={selected ? 'tabItemContainerActive' : 'tabItemContainer'}>
             <span className='tabTitle'>{title}</span>
-        </div>
+        </button>
     )
 }

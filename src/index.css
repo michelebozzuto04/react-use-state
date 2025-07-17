@@ -9,3 +9,12 @@ h1 {
   background-color: #F8F9FA;
   padding: 1rem;
 }
+
+.tabsContainer {
+  padding: 1rem 3rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}

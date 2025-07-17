@@ -1,14 +1,24 @@
 import { useState } from 'react'
 import './index.css'
-import Tabs from './components/Tabs/Tabs'
+import languages from './data/languages'
+import TabItem from './components/Tabs/TabItem'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedTab, setSelectedTab] = useState(null);
+
+  function handleClick(index) {
+    setSelectedTab(index)
+  }
 
   return (
     <>
       <h1>Learn Web development</h1>
-      <Tabs />
+      <div className='tabsContainer'>
+        {languages.map((language, index) => (
+          <TabItem key={index} onClick={() => handleClick(index)} selected={selectedTab === index} title={language.title} />
+        ))}
+      </div>
+      <h2>{selectedTab != null && languages[selectedTab].title}</h2>
     </>
   )
 }

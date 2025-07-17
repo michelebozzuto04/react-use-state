@@ -1,8 +1,0 @@
-.tabsContainer {
-    padding: 1rem;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
