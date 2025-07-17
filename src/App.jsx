@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './index.css'
 import languages from './data/languages'
-import TabItem from './components/Tabs/TabItem'
+import TabItem from './components/TabItem/TabItem'
+import Description from './components/Description/Description';
 
 function App() {
   const [selectedTab, setSelectedTab] = useState(null);
@@ -18,7 +19,7 @@ function App() {
           <TabItem key={index} onClick={() => handleClick(index)} selected={selectedTab === index} title={language.title} />
         ))}
       </div>
-      <h2>{selectedTab != null && languages[selectedTab].title}</h2>
+      <Description language={selectedTab != null ? languages[selectedTab] : null} />
     </>
   )
 }
